@@ -7,12 +7,15 @@
 nav {
     background-color: white;
     box-shadow: 0  0 5px 5px rgb(241, 237, 237);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .nav-center {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .nav-header {
     display: flex;
@@ -56,6 +59,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-evenly;
     padding: 0 1rem;
 }
 .links li {
@@ -78,7 +82,7 @@ nav {
 .links li a h1:hover {
     background-color: black;
     color:white;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .links li a button {
     width: 200px;
@@ -120,7 +124,7 @@ nav {
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 0 2rem 0 2rem;
     }
     .nav-header {
@@ -200,7 +204,7 @@ background: linear-gradient(90deg, rgba(75,15,122,1) 0%, rgba(40,31,180,1) 18%, 
     height: 60vh;
     flex-direction: column;
     border: 3px solid white;
-    overflow: scroll;
+    overflow: hidden;
     padding: 20px;
     margin: 5px 5px 50px 5px;
     box-shadow: 0  0 2px 2px rgb(37, 37, 37);
@@ -217,9 +221,12 @@ background: linear-gradient(90deg, rgba(75,15,122,1) 0%, rgba(40,31,180,1) 18%, 
     #pp {
         width: 40vw;
     }
+    #changeStory {
+        width: 300px;
+    }
 }
 .news-section article button {
-    width: 300px;
+    width: 200px;
     height: 60px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -246,7 +253,7 @@ background: linear-gradient(90deg, rgba(75,15,122,1) 0%, rgba(40,31,180,1) 18%, 
 .gallery-section {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0 0 10px;
+    padding: 10px 0 0 10px;
 }
 .gallery-img-container {
     flex:50%;
@@ -254,9 +261,11 @@ background: linear-gradient(90deg, rgba(75,15,122,1) 0%, rgba(40,31,180,1) 18%, 
     padding: 0 4px;
 }
 .gallery-img-container img {
-    margin-top: 8px;
+    margin-top: 1px;
     vertical-align: middle;
     width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
 }
 .gallery-img-container img:hover {
     transform: scale(1.5);
