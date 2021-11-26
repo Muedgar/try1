@@ -205,7 +205,7 @@ background: linear-gradient(90deg, rgba(75,15,122,1) 0%, rgba(40,31,180,1) 18%, 
     flex-direction: column;
     border: 3px solid white;
     overflow: scroll;
-    margin: 5px 5px 50px 5px;
+    margin: 5px 50px 5px;
     box-shadow: 0  0 2px 2px rgb(37, 37, 37);
     border-radius: 5%;
     transition: all 0.3 linear;
